@@ -100,9 +100,3 @@ Tidak ada bilangan yang dimasukkan.
     ```
 4. Masukkan bilangan secara berurutan. Ketik `0` ketika ingin menghentikan input.
 5. Program akan menampilkan bilangan terbesar atau pesan jika tidak ada bilangan yang dimasukkan.
-
-## Catatan
-
-- Program ini hanya menerima bilangan bulat sebagai input. Jika pengguna memasukkan nilai selain bilangan bulat (seperti teks atau desimal), program akan menghasilkan error. Untuk memperbaiki ini, kamu bisa menambahkan mekanisme validasi input.
-
-
