@@ -43,6 +43,14 @@ if hasil is not None:
 else:
     print("Tidak ada bilangan yang dimasukkan.")
 ```
+# Hasil screenshot di visualstudiocode
+
+![Screenshot 2024-10-19 201145](https://github.com/user-attachments/assets/365486ac-4cba-4d83-baa3-6aed0b76d806)
+
+# Berikut adalah flowchartnya
+
+![Screenshot 2024-10-19 202141](https://github.com/user-attachments/assets/ca02747f-5475-44eb-b64d-b6ec6a84a416)
+
 
 ## Penjelasan Kode
 
