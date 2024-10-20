@@ -100,3 +100,9 @@ Tidak ada bilangan yang dimasukkan.
     ```
 4. Masukkan bilangan secara berurutan. Ketik `0` ketika ingin menghentikan input.
 5. Program akan menampilkan bilangan terbesar atau pesan jika tidak ada bilangan yang dimasukkan.
+
+## kesimpulan
+
+Program ini menentukan bilangan terbesar dari serangkaian input pengguna menggunakan perulangan dan kondisi. Pengguna dapat terus memasukkan bilangan hingga mengetik 0hingga berhenti. Program ini mengajarkan dasar-dasar pemrograman seperti penggunaan variabel, perulangan, kondisi, dan kontrol alur.
+
+
