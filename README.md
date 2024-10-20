@@ -1,9 +1,9 @@
 # tugas-bahasa-pemograman-ke-5
 
-Nama   = DZAKI ARIF RAHMAN  
-Kelas  = TI.24.A4  
-NIM    = 312410312  
-Matkul = BAHASA PEMOGRAMAN
+### Nama   = DZAKI ARIF RAHMAN  
+### Kelas  = TI.24.A4  
+### NIM    = 312410312  
+### Matkul = BAHASA PEMOGRAMAN
 
 # Menentukan Bilangan Terbesar dari Serangkaian Input
 
@@ -101,8 +101,68 @@ Tidak ada bilangan yang dimasukkan.
 4. Masukkan bilangan secara berurutan. Ketik `0` ketika ingin menghentikan input.
 5. Program akan menampilkan bilangan terbesar atau pesan jika tidak ada bilangan yang dimasukkan.
 
-## kesimpulan
+# menetukan 3 bilangan terbesar
 
-Program ini menentukan bilangan terbesar dari serangkaian input pengguna menggunakan perulangan dan kondisi. Pengguna dapat terus memasukkan bilangan hingga mengetik 0hingga berhenti. Program ini mengajarkan dasar-dasar pemrograman seperti penggunaan variabel, perulangan, kondisi, dan kontrol alur.
+Program ini digunakan untuk menemukan bilangan terbesar dari tiga bilangan yang dimasukkan oleh pengguna. Program meminta tiga bilangan sebagai input, membandingkannya, dan kemudian mencetak bilangan terbesar di antara ketiga bilangan tersebut.
+
+## Kode Program
+
+```python
+a = int(input('Masukkan bilangan pertama: '))
+b = int(input('Masukkan bilangan kedua: '))
+c = int(input('Masukkan bilangan ketiga: '))
+
+if a > b and a > c:
+    print(f'Bilangan terbesar adalah {a}')
+elif b > a and b > c:
+    print(f'Bilangan terbesar adalah {b}')
+else:
+    print(f'Bilangan terbesar adalah {c}')
+```
+
+# Hasil screenshot di visualstudiocode
+
+![Screenshot 2024-10-19 201145](https://github.com/user-attachments/assets/f01f9fce-7b67-4b2e-b63a-cb613ee4b9ae)
+
+# Berikut adalah flowchartnya
+
+![Screenshot 2024-10-20 162920](https://github.com/user-attachments/assets/5ca9a3a9-5ea6-428d-b7df-f3e82bcc4003)
+
+## Penjelasan Kode
+
+1. **Input Bilangan:**
+   Program meminta pengguna memasukkan tiga bilangan menggunakan fungsi `input()` dan mengonversinya menjadi bilangan bulat (`int`), kemudian disimpan ke variabel `a`, `b`, dan `c`.
+
+2. **Logika Penentuan Bilangan Terbesar:**
+   - Program menggunakan struktur kondisi `if-elif-else` untuk membandingkan ketiga bilangan.
+   - Jika `a` lebih besar dari `b` dan `c`, program akan mencetak bahwa `a` adalah bilangan terbesar.
+   - Jika `b` lebih besar dari `a` dan `c`, program akan mencetak bahwa `b` adalah bilangan terbesar.
+   - Jika tidak ada kondisi di atas yang terpenuhi, program akan menganggap bahwa `c` adalah bilangan terbesar dan mencetaknya.
+
+3. **Output:**
+   Program akan mencetak bilangan terbesar yang ditemukan di antara ketiga bilangan yang diinputkan oleh pengguna.
+
+## Contoh Eksekusi Program
+
+### Contoh 1:
+Pengguna memasukkan tiga bilangan, yaitu `10`, `20`, dan `15`.
+
+```
+Masukkan bilangan pertama: 10
+Masukkan bilangan kedua: 20
+Masukkan bilangan ketiga: 15
+Bilangan terbesar adalah 20
+```
+
+### Contoh 2:
+Pengguna memasukkan tiga bilangan, yaitu `45`, `35`, dan `50`.
+
+```
+Masukkan bilangan pertama: 45
+Masukkan bilangan kedua: 35
+Masukkan bilangan ketiga: 50
+Bilangan terbesar adalah 50
+```
+
 
 
