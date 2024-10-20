@@ -1,4 +1,4 @@
-# TIPE DATA VARIABEL
+# tugas-bahasa-pemograman-ke-5
 
 Nama   = DZAKI ARIF RAHMAN  
 Kelas  = TI.24.A4  
@@ -105,4 +105,4 @@ Tidak ada bilangan yang dimasukkan.
 
 - Program ini hanya menerima bilangan bulat sebagai input. Jika pengguna memasukkan nilai selain bilangan bulat (seperti teks atau desimal), program akan menghasilkan error. Untuk memperbaiki ini, kamu bisa menambahkan mekanisme validasi input.
 
-# tugas-bahasa-pemograman
+
