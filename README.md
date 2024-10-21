@@ -1,3 +1,7 @@
+# contoh
+
+![Screenshot 2024-10-21 112249](https://github.com/user-attachments/assets/ed26aff0-4c60-4d4b-984b-5b30bad30cdd)
+
 # tugas-bahasa-pemograman-ke-5
 
 ### Nama   = DZAKI ARIF RAHMAN  
