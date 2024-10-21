@@ -276,7 +276,7 @@ Pada bagian kedua, string format `{0:>3} {1:>16}` digunakan untuk mengatur lebar
  10      10000000000
 ```
 
-String format sangat berguna untuk memastikan tampilan data yang rapi, terutama saat bekerja dengan tabel atau laporan yang membutuhkan perataan kolom tertentu.
+String format sangat berguna untuk memastikan tampilan data yang rapi.
 
 
 # Latihan 2
