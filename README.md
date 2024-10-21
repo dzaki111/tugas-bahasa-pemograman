@@ -163,7 +163,7 @@ Masukkan bilangan kedua: 35
 Masukkan bilangan ketiga: 50
 Bilangan terbesar adalah 50
 ```
-# PRAKTIKUM 3 - LATIHAN 1
+# PRAKTIKUM 3 LATIHAN 1
 
 ![Screenshot 2024-10-21 114315](https://github.com/user-attachments/assets/f46ec27f-1e62-4578-bcf6-543b4bbfb59e)
 
@@ -279,7 +279,7 @@ Pada bagian kedua, string format `{0:>3} {1:>16}` digunakan untuk mengatur lebar
 String format sangat berguna untuk memastikan tampilan data yang rapi, terutama saat bekerja dengan tabel atau laporan yang membutuhkan perataan kolom tertentu.
 
 
-# README untuk Python Script "Latihan 2"
+# Latihan 2
 
 ![Screenshot 2024-10-21 120846](https://github.com/user-attachments/assets/d11b5ed0-5e92-424f-8648-80a96d764101)
 
@@ -329,7 +329,6 @@ Script Python ini menerima dua input dari pengguna, mencetak nilai input, mengon
    - Baris ini mencetak hasil pembagian `a` dengan `b`.
    - Harap diperhatikan bahwa baris ini dapat menyebabkan `ZeroDivisionError` jika nilai `b` adalah nol, jadi penting untuk memvalidasi input sebelum pembagian.
   
-# hasil ruun di python
 
 
 
