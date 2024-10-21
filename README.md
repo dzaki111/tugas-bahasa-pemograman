@@ -165,9 +165,6 @@ Bilangan terbesar adalah 50
 ```
 # PRAKTIKUM 3 LATIHAN 1
 
-![Screenshot 2024-10-21 114315](https://github.com/user-attachments/assets/f46ec27f-1e62-4578-bcf6-543b4bbfb59e)
-
-
 <img width="712" alt="image" src="https://github.com/user-attachments/assets/1447f1ff-cdc7-42cd-a86c-90956cac26f5">
 
 ## PENGGUNAAN END
@@ -203,14 +200,14 @@ dan ini hasil tanpa menggunakan fungsi print() di tengah pada kode program di at
 
 ![Screenshot 2024-10-19 105946](https://github.com/user-attachments/assets/f883e3f9-751b-4be6-973a-a1720cf8d062)
 
-python
+```python
 w, x, y, z, =10, 15, 20, 25
 print(w, x, y, z,)
 print(w, x, y, z, sep=',')
 print(w, x, y, z, sep='')
 print(w, x, y, z, sep=':')
 print(w, x, y, z, sep='-----')
-`
+```
 pada python penggunaan serepator dapat menggunakan fungsi split() atau sep yang seperti dalam kode program di atas
 
 serepator ini menentukan pembatasan yang digunakan untuk memisahkan sting,serepator dapat berupa karakter tunggal atau beberapa karakter.jika tidak ditentukan,maka python akan menggunakan spasi sebagai pemisah.
@@ -219,27 +216,27 @@ Berikut Hasil Kode Program Diatas:
 
 ![Screenshot 2024-10-19 111502](https://github.com/user-attachments/assets/9afa0286-fcd8-437e-8319-0da6019ef34e)
 
-python
+```python
 w, x, y, z, =10, 15, 20, 25
-`
+```
 Variable yang seperti ini menentukan parameter,jadi variable ini tidak bisa memasukan variable angka yang sudah ditentukan w = 10,x=15,y=20,z=25
 
-python
+```python
 print(w, x, y, z,)
-`
+```
 
 Fungsi ini hanya mencetak saja yang menggunakan fungsi print(), tetapi di karenakan mencetak parameter,koma tersebut di hilangkan
 
-python
+```python
 print(w, x, y, z, sep=',')
-`
+```
 karena pemisahnya dihilangkan,kita menggunakan fungsi `sep`atau`split()`dan kita memasukkan pemisahnya didalam string akan memunculkan cetakan yang sesuai keinginan anda dalam memisahkan sesuatu parameter
 
 ## STRING FORMAT
 
 ![Screenshot 2024-10-19 112724](https://github.com/user-attachments/assets/d5f2d127-76c0-4653-996c-aa5e6d201274)
 
-python
+```python
 print(0, 10**0)
 print(1, 10**1)
 print(2, 10**2)
@@ -263,10 +260,10 @@ print('{0:>3} {1:>16}'.format(7, 10**7))
 print('{0:>3} {1:>16}'.format(8, 10**8))
 print('{0:>3} {1:>16}'.format(9, 10**9))
 print('{0:>3} {1:>16}'.format(10, 10**10))
-`
+```
 String Format adalah proses memasukan variable atau string kustom ke dalam teks yang sudah ditentukan,dan dapat digunakan untuk berbagai keperluan,seperti memasukan judul dalam grafik,menampilkan pesan atau kesalahan, atau meneruskan kesalahan ke suatu fungsi 
 
-python
+```python
 print(0, 10**0)
 print(1, 10**1)
 print(2, 10**2)
@@ -277,11 +274,11 @@ print(6, 10**5)
 print(8, 10**8)
 print(9, 10**9)
 print(10, 10**10)
-`
+```
 
 Nilai pertama dalam setiap pasangan adalah angka dari 0 hingga 10, kode program ini dihitung dengan menggunakan operasi pangkat atau fungsinya (**) untuk menaikkan 10 ke pangkat yang sesuai dengan angka pertama, yang bisa di bahasa manusiakan variable 0 = 10 pangkat 0, variable 1 10 pangkat 1 dan seterusnya hingga variable 10 yaitu 10 pangkat 10, dan di cetak dengan fungsi print()
 
-python
+```python
 print('{0:>3} {1:>16}'.format(0, 10**0))
 print('{0:>3} {1:>16}'.format(1, 10**1))
 print('{0:>3} {1:>16}'.format(2, 10**2))
@@ -293,7 +290,7 @@ print('{0:>3} {1:>16}'.format(7, 10**7))
 print('{0:>3} {1:>16}'.format(8, 10**8))
 print('{0:>3} {1:>16}'.format(9, 10**9))
 print('{0:>3} {1:>16}'.format(10, 10**10))
-`
+```
 
 Kode ini mencetak 11 baris dengan format {0:3} {1:16} yang di gunakan untuk mengatur format string
 
