@@ -168,10 +168,12 @@ Bilangan terbesar adalah 50
 ![Screenshot 2024-10-21 114315](https://github.com/user-attachments/assets/f46ec27f-1e62-4578-bcf6-543b4bbfb59e)
 
 
-## PENGGUNAAN `end` PADA `print()`
+<img width="712" alt="image" src="https://github.com/user-attachments/assets/1447f1ff-cdc7-42cd-a86c-90956cac26f5">
 
-### Contoh Kode:
-```python
+## PENGGUNAAN END
+<img width="286" alt="image" src="https://github.com/user-attachments/assets/6d7f5c02-fa7a-46bf-97b4-1bf8f3a45e90">
+
+python
 print('A', end='')
 print('b', end='')
 print('c', end='')
@@ -179,56 +181,65 @@ print()
 print('x')
 print('y')
 print('z')
-```
+`
 
-Pada Python, parameter `end` dalam fungsi `print()` digunakan untuk menentukan apa yang akan ditambahkan di akhir setiap perintah `print()`. Secara default, `print()` mengakhiri outputnya dengan karakter baris baru (newline `\n`). Namun, dengan menambahkan `end=''`, kita dapat mengubah perilaku ini, sehingga output akan berlanjut dalam satu baris tanpa baris baru.
+Parameter end dalam fungsi Print () di python di gunakan untuk menambahkan string(" ")apapun diakhir dan mengeluarkan pertanyaan print
 
-#### Hasil Kode:
-```bash
-Abc
-x
-y
-z
-```
+python
+print()
+`
 
+Secara default,fungsi print() akan mengakhiri dengan baris baru,dan akan secara otomatis karakter baris baru di akhir outputnya
 
+inilah hasil program tersebut:
 
-### Penjelasan:
-Pada contoh di atas, `end=''` pada tiga `print()` pertama menyebabkan huruf-huruf A, b, dan c dicetak tanpa baris baru, sehingga outputnya tersambung menjadi "Abc". Sementara itu, perintah `print()` selanjutnya tanpa `end=''` tetap menambahkan baris baru.
+![Screenshot 2024-10-19 105401](https://github.com/user-attachments/assets/e4be0ae6-0c1e-46ab-a947-1470668b5387)
 
-## PENGGUNAAN `sep` PADA `print()`
+dan ini hasil tanpa menggunakan fungsi print() di tengah pada kode program di atas:
 
-### Contoh Kode:
-```python
-w, x, y, z = 10, 15, 20, 25
-print(w, x, y, z)
+![Screenshot 2024-10-19 105727](https://github.com/user-attachments/assets/ce8c4426-642e-4460-b59e-31b88d4bd59b)
+
+## PENGGUNAAN SEREPATOR
+
+![Screenshot 2024-10-19 105946](https://github.com/user-attachments/assets/f883e3f9-751b-4be6-973a-a1720cf8d062)
+
+python
+w, x, y, z, =10, 15, 20, 25
+print(w, x, y, z,)
 print(w, x, y, z, sep=',')
 print(w, x, y, z, sep='')
 print(w, x, y, z, sep=':')
 print(w, x, y, z, sep='-----')
-```
+`
+pada python penggunaan serepator dapat menggunakan fungsi split() atau sep yang seperti dalam kode program di atas
 
-Parameter `sep` dalam fungsi `print()` digunakan untuk menentukan pemisah (separator) yang digunakan antara elemen-elemen yang dicetak. Secara default, pemisahnya adalah spasi.
+serepator ini menentukan pembatasan yang digunakan untuk memisahkan sting,serepator dapat berupa karakter tunggal atau beberapa karakter.jika tidak ditentukan,maka python akan menggunakan spasi sebagai pemisah.
 
-#### Hasil Kode:
-```bash
-10 15 20 25
-10,15,20,25
-10152025
-10:15:20:25
-10-----15-----20-----25
-```
+Berikut Hasil Kode Program Diatas:
 
-### Penjelasan:
-1. `sep=','` menghasilkan output di mana angka-angka dipisahkan dengan koma.
-2. `sep=''` menghapus pemisah, menghasilkan output tanpa spasi di antara angka.
-3. `sep=':'` menambahkan titik dua sebagai pemisah.
-4. `sep='-----'` menghasilkan pemisah berupa lima tanda hubung di antara angka-angka.
+![Screenshot 2024-10-19 111502](https://github.com/user-attachments/assets/9afa0286-fcd8-437e-8319-0da6019ef34e)
 
-## STRING FORMAT PADA `print()`
+python
+w, x, y, z, =10, 15, 20, 25
+`
+Variable yang seperti ini menentukan parameter,jadi variable ini tidak bisa memasukan variable angka yang sudah ditentukan w = 10,x=15,y=20,z=25
 
-### Contoh Kode:
-```python
+python
+print(w, x, y, z,)
+`
+
+Fungsi ini hanya mencetak saja yang menggunakan fungsi print(), tetapi di karenakan mencetak parameter,koma tersebut di hilangkan
+
+python
+print(w, x, y, z, sep=',')
+`
+karena pemisahnya dihilangkan,kita menggunakan fungsi `sep`atau`split()`dan kita memasukkan pemisahnya didalam string akan memunculkan cetakan yang sesuai keinginan anda dalam memisahkan sesuatu parameter
+
+## STRING FORMAT
+
+![Screenshot 2024-10-19 112724](https://github.com/user-attachments/assets/d5f2d127-76c0-4653-996c-aa5e6d201274)
+
+python
 print(0, 10**0)
 print(1, 10**1)
 print(2, 10**2)
@@ -252,84 +263,40 @@ print('{0:>3} {1:>16}'.format(7, 10**7))
 print('{0:>3} {1:>16}'.format(8, 10**8))
 print('{0:>3} {1:>16}'.format(9, 10**9))
 print('{0:>3} {1:>16}'.format(10, 10**10))
-```
+`
+String Format adalah proses memasukan variable atau string kustom ke dalam teks yang sudah ditentukan,dan dapat digunakan untuk berbagai keperluan,seperti memasukan judul dalam grafik,menampilkan pesan atau kesalahan, atau meneruskan kesalahan ke suatu fungsi 
 
-### Penjelasan:
-Pada bagian pertama, perintah `print()` mencetak hasil pangkat dari 10 mulai dari 0 hingga 10. Setiap baris mencetak dua nilai: angka pertama (0 hingga 10) dan hasil dari 10 pangkat angka tersebut.
+python
+print(0, 10**0)
+print(1, 10**1)
+print(2, 10**2)
+print(3, 10**3)
+print(4, 10**4)
+print(5, 10**5)
+print(6, 10**5)
+print(8, 10**8)
+print(9, 10**9)
+print(10, 10**10)
+`
 
-Pada bagian kedua, string format `{0:>3} {1:>16}` digunakan untuk mengatur lebar tampilan output:
-- `{0:>3}` berarti angka pertama akan dicetak dengan lebar minimal 3 karakter, dan diratakan ke kanan.
-- `{1:>16}` berarti angka kedua (hasil 10 pangkat) akan dicetak dengan lebar minimal 16 karakter, juga dengan perataan kanan.
+Nilai pertama dalam setiap pasangan adalah angka dari 0 hingga 10, kode program ini dihitung dengan menggunakan operasi pangkat atau fungsinya (**) untuk menaikkan 10 ke pangkat yang sesuai dengan angka pertama, yang bisa di bahasa manusiakan variable 0 = 10 pangkat 0, variable 1 10 pangkat 1 dan seterusnya hingga variable 10 yaitu 10 pangkat 10, dan di cetak dengan fungsi print()
 
-#### Hasil Kode (Terformat):
-```bash
-  0                1
-  1               10
-  2              100
-  3             1000
-  4            10000
-  5           100000
-  6          1000000
-  7         10000000
-  8        100000000
-  9       1000000000
- 10      10000000000
-```
+python
+print('{0:>3} {1:>16}'.format(0, 10**0))
+print('{0:>3} {1:>16}'.format(1, 10**1))
+print('{0:>3} {1:>16}'.format(2, 10**2))
+print('{0:>3} {1:>16}'.format(3, 10**3))
+print('{0:>3} {1:>16}'.format(4, 10**4))
+print('{0:>3} {1:>16}'.format(5, 10**5))
+print('{0:>3} {1:>16}'.format(6, 10**6))
+print('{0:>3} {1:>16}'.format(7, 10**7))
+print('{0:>3} {1:>16}'.format(8, 10**8))
+print('{0:>3} {1:>16}'.format(9, 10**9))
+print('{0:>3} {1:>16}'.format(10, 10**10))
+`
 
-String format sangat berguna untuk memastikan tampilan data yang rapi.
+Kode ini mencetak 11 baris dengan format {0:3} {1:16} yang di gunakan untuk mengatur format string
 
+Pada string pertama, angka 0 di format untuk memeliki lebar 3 karakter atau yang bisa disebut 3 kali spasi dengan perataan kanan.
 
-# Latihan 2
-
-![Screenshot 2024-10-21 120846](https://github.com/user-attachments/assets/d11b5ed0-5e92-424f-8648-80a96d764101)
-
-Script Python ini menerima dua input dari pengguna, mencetak nilai input, mengonversi input menjadi bilangan bulat, dan kemudian melakukan operasi penjumlahan dan pembagian. Script ini juga menunjukkan cara menggunakan format string dengan metode `.format()`.
-
-### Penjelasan Kode
-
-1. **Baris 1-2: Input dari Pengguna**
-   ```python
-   a = input("masukkan nilai a:")
-   b = input("masukkan nilai b:")
-   ```
-   - Baris ini meminta pengguna untuk memasukkan dua nilai untuk variabel `a` dan `b`. Pada tahap ini, kedua input dianggap sebagai string.
-
-2. **Baris 3-5: Mencetak Nilai Awal**
-   ```python
-   print("variable a=", a)
-   print("variable b=", b)
-   print("hasil penggabungan {1}&{0}=%d".format(a, b) % (a + b))
-   ```
-   - Script mencetak nilai variabel `a` dan `b`.
-   - Pada baris 5, script mencoba menggabungkan `a` dan `b` dan mencetak hasilnya menggunakan format string. Namun, ini akan menyebabkan error karena `a + b` menggabungkan string, bukan menjumlahkan angka.
-
-3. **Baris 7: Komentar**
-   ```python
-   #konversi nilai variable
-   ```
-   - Komentar ini menjelaskan konversi input string menjadi bilangan bulat yang akan dilakukan selanjutnya.
-
-4. **Baris 8-9: Konversi ke Bilangan Bulat**
-   ```python
-   a = int(a)
-   b = int(b)
-   ```
-   - Baris ini mengonversi nilai string `a` dan `b` menjadi bilangan bulat sehingga operasi matematika dapat dilakukan.
-
-5. **Baris 10: Operasi Penjumlahan**
-   ```python
-   print("hasil penjumlahan {1}+{0}=%d".format(a, b) % (a + b))
-   ```
-   - Baris ini mencetak hasil penjumlahan dari `a` dan `b` menggunakan output yang diformat.
-
-6. **Baris 11: Operasi Pembagian**
-   ```python
-   print("hasil pembagian {1}/{0}=%d".format(a, b) % (a / b))
-   ```
-   - Baris ini mencetak hasil pembagian `a` dengan `b`.
-   - Harap diperhatikan bahwa baris ini dapat menyebabkan `ZeroDivisionError` jika nilai `b` adalah nol, jadi penting untuk memvalidasi input sebelum pembagian.
-  
-
-
-
-
+angka 1 diformat untuk memiliki lebar 16 Karakter atau 16 kali spasi dengan perataan kanan, dan masing-masing mencetak nilai seperti format di atas dengan fungsi print()
