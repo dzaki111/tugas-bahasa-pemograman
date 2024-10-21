@@ -165,6 +165,9 @@ Bilangan terbesar adalah 50
 ```
 # PRAKTIKUM 3 - LATIHAN 1
 
+![Screenshot 2024-10-21 114315](https://github.com/user-attachments/assets/f46ec27f-1e62-4578-bcf6-543b4bbfb59e)
+
+
 ## PENGGUNAAN `end` PADA `print()`
 
 ### Contoh Kode:
@@ -187,6 +190,8 @@ x
 y
 z
 ```
+
+
 
 ### Penjelasan:
 Pada contoh di atas, `end=''` pada tiga `print()` pertama menyebabkan huruf-huruf A, b, dan c dicetak tanpa baris baru, sehingga outputnya tersambung menjadi "Abc". Sementara itu, perintah `print()` selanjutnya tanpa `end=''` tetap menambahkan baris baru.
@@ -272,5 +277,63 @@ Pada bagian kedua, string format `{0:>3} {1:>16}` digunakan untuk mengatur lebar
 ```
 
 String format sangat berguna untuk memastikan tampilan data yang rapi, terutama saat bekerja dengan tabel atau laporan yang membutuhkan perataan kolom tertentu.
+
+
+# README untuk Python Script "Latihan 2"
+
+![Screenshot 2024-10-21 120846](https://github.com/user-attachments/assets/d11b5ed0-5e92-424f-8648-80a96d764101)
+
+
+## Gambaran Umum
+Script Python ini menerima dua input dari pengguna, mencetak nilai input, mengonversi input menjadi bilangan bulat, dan kemudian melakukan operasi penjumlahan dan pembagian. Script ini juga menunjukkan cara menggunakan format string dengan metode `.format()`.
+
+### Penjelasan Kode
+
+1. **Baris 1-2: Input dari Pengguna**
+   ```python
+   a = input("masukkan nilai a:")
+   b = input("masukkan nilai b:")
+   ```
+   - Baris ini meminta pengguna untuk memasukkan dua nilai untuk variabel `a` dan `b`. Pada tahap ini, kedua input dianggap sebagai string.
+
+2. **Baris 3-5: Mencetak Nilai Awal**
+   ```python
+   print("variable a=", a)
+   print("variable b=", b)
+   print("hasil penggabungan {1}&{0}=%d".format(a, b) % (a + b))
+   ```
+   - Script mencetak nilai variabel `a` dan `b`.
+   - Pada baris 5, script mencoba menggabungkan `a` dan `b` dan mencetak hasilnya menggunakan format string. Namun, ini akan menyebabkan error karena `a + b` menggabungkan string, bukan menjumlahkan angka.
+
+3. **Baris 7: Komentar**
+   ```python
+   #konversi nilai variable
+   ```
+   - Komentar ini menjelaskan konversi input string menjadi bilangan bulat yang akan dilakukan selanjutnya.
+
+4. **Baris 8-9: Konversi ke Bilangan Bulat**
+   ```python
+   a = int(a)
+   b = int(b)
+   ```
+   - Baris ini mengonversi nilai string `a` dan `b` menjadi bilangan bulat sehingga operasi matematika dapat dilakukan.
+
+5. **Baris 10: Operasi Penjumlahan**
+   ```python
+   print("hasil penjumlahan {1}+{0}=%d".format(a, b) % (a + b))
+   ```
+   - Baris ini mencetak hasil penjumlahan dari `a` dan `b` menggunakan output yang diformat.
+
+6. **Baris 11: Operasi Pembagian**
+   ```python
+   print("hasil pembagian {1}/{0}=%d".format(a, b) % (a / b))
+   ```
+   - Baris ini mencetak hasil pembagian `a` dengan `b`.
+   - Harap diperhatikan bahwa baris ini dapat menyebabkan `ZeroDivisionError` jika nilai `b` adalah nol, jadi penting untuk memvalidasi input sebelum pembagian.
+
+### Catatan
+- **Kesalahan Format String:** Pada baris 5, script mencoba menggunakan `"%d"` dengan input string, yang akan menyebabkan error. Ini perlu diperbaiki dengan mengonversi input menjadi bilangan bulat sebelum menggunakan `"%d"`, atau dengan menghapus `"%d"` dan memformat output dengan benar.
+- **Penanganan ZeroDivisionError:** Script saat ini tidak menangani pembagian dengan nol, yang dapat menyebabkan error saat eksekusi jika `b` adalah 0.
+
 
 
