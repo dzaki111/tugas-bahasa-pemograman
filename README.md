@@ -283,8 +283,6 @@ String format sangat berguna untuk memastikan tampilan data yang rapi, terutama 
 
 ![Screenshot 2024-10-21 120846](https://github.com/user-attachments/assets/d11b5ed0-5e92-424f-8648-80a96d764101)
 
-
-## Gambaran Umum
 Script Python ini menerima dua input dari pengguna, mencetak nilai input, mengonversi input menjadi bilangan bulat, dan kemudian melakukan operasi penjumlahan dan pembagian. Script ini juga menunjukkan cara menggunakan format string dengan metode `.format()`.
 
 ### Penjelasan Kode
@@ -330,10 +328,9 @@ Script Python ini menerima dua input dari pengguna, mencetak nilai input, mengon
    ```
    - Baris ini mencetak hasil pembagian `a` dengan `b`.
    - Harap diperhatikan bahwa baris ini dapat menyebabkan `ZeroDivisionError` jika nilai `b` adalah nol, jadi penting untuk memvalidasi input sebelum pembagian.
+  
+# hasil ruun di python
 
-### Catatan
-- **Kesalahan Format String:** Pada baris 5, script mencoba menggunakan `"%d"` dengan input string, yang akan menyebabkan error. Ini perlu diperbaiki dengan mengonversi input menjadi bilangan bulat sebelum menggunakan `"%d"`, atau dengan menghapus `"%d"` dan memformat output dengan benar.
-- **Penanganan ZeroDivisionError:** Script saat ini tidak menangani pembagian dengan nol, yang dapat menyebabkan error saat eksekusi jika `b` adalah 0.
 
 
 
